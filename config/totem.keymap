@@ -96,36 +96,6 @@
             }; */
     };
 
-    macros {
-        capture_region: capture_region {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp PRINTSCREEN>,
-                <&macro_release>,
-                <&kp LCTRL>;
-
-            label = "CAPTURE_REGION";
-        };
-
-        region_capture2: region_capture2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL>,
-                <&macro_tap>,
-                <&kp K_APP>,
-                <&macro_release>,
-                <&kp RCTRL>;
-
-            label = "REGION_CAPTURE2";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
